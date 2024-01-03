@@ -1,10 +1,14 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
+const baseUrl = process.env.NODE_ENV === 'development'
+  ? "/"
+  : "/react-gh-pages-playground";
+
 export default () => {
   return defineConfig({
     plugins: [react()],
-    base: "/react-gh-pages-playground",
+    base: `${baseUrl}`,
     server: {
         open: true,
     },
