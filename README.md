@@ -6,6 +6,8 @@ Google then told me that one option was to use Vite, so I migrated to that.
 
 So far I've set up routing, installed Redux and created a component that calls an API to get data.
 
+[View the app here](https://nikstra.github.io/react-gh-pages-playground/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
