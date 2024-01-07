@@ -1,3 +1,11 @@
+# React on Github pages
+
+Since the Internet suggested to use Create React App, that is what I did. Immediately I got a warning that CRA
+is deprecated.
+Google then told me that one option was to use Vite, so I migrated to that.
+
+So far I've set up routing, installed Redux and created a component that calls an API to get data.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
