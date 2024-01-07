@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import About from "./routes/About";
 import Home from "./routes/Home";
 import Jokes from "./routes/Jokes";
+import Settings from "./routes/Settings";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/jokes" element={<Jokes />} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
     </>
   );

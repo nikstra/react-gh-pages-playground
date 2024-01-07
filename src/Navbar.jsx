@@ -27,6 +27,8 @@ const links = [
   { name: "Home", path: "/" },
   { name: "Jokes", path: "/jokes" },
   { name: "About", path: "/about" },
+  //   { name: "⚙", path: "/settings", modal: true }, // html code: &#x2699;
+  { name: "⚙️", path: "/settings", modal: true }, // html code: &#x2699;&#xfe0f;
 ];
 
 const isCurrentPage = ({ isActive }) => (isActive ? "current" : "");
@@ -36,7 +38,13 @@ const Navbar = () => {
     <NavUnlisted>
       {" "}
       {links.map((link, index) => (
-        <NavLink key={index} to={link.path} end className={isCurrentPage}>
+        <NavLink
+          key={index}
+          to={link.path}
+          end
+          className={isCurrentPage}
+          state={link.modal ? { modal: link.modal } : null}
+        >
           <li>{link.name}</li>
         </NavLink>
       ))}
