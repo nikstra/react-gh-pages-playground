@@ -10,10 +10,10 @@ const Settings = () => {
   return (
     <div className="container">
       <p>
-        The settings page are under development. Enjoy a random image for now.
+        The settings page is under development. Enjoy a random image for now.
       </p>
       <div className={modal ? "modal" : undefined}>
-        {modal && <Link to={returnUrl}>Close</Link>}
+        <p>{modal && <Link to={returnUrl}>Close</Link>}</p>
         <div>
           <img src="https://picsum.photos/800/600?random" />
         </div>
