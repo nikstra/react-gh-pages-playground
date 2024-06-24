@@ -15,7 +15,7 @@ const Settings = () => {
       <div className={modal ? "modal" : undefined}>
         {modal && <Link to={returnUrl}>Close</Link>}
         <div>
-          <img src="https://source.unsplash.com/random" />
+          <img src="https://picsum.photos/800/600?random" />
         </div>
       </div>
     </div>
